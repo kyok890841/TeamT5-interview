@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Todo</title>
+</head>
+
+<body>
+    <form action="{{ url_for('todolist.addtodo') }}" method="post">
+      <h2> Create new TODO </h2>
+      <p><input type=text name=items>
+        <p><input type="datetime-local" name="expire_time" value="2022-11-03T19:30">
+        <p><input type=submit value=signup>
+        
+    </form>
+</body>
+
+</html>
